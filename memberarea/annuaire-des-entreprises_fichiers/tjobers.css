@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+.jober-profile-container {
+	border-color: transparent;
+}
+.lightgrey-bg {
+	background-color: #fff;
+	border-top: 1px solid #f3f3f3;
+	border-bottom: 1px solid #f3f3f3;
+}
+
+.lightgrey-bg .btn-allcat {
+
+    text-transform: unset;
+    color: #d39e0a;
+    background-color: transparent;
+    box-shadow: rgba(57, 73, 76, 0.35) 0px 1px 6px;
+    margin-top: 20px;
+    line-height: 32px;
+    border: 1px solid #d39e0a;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+    transition: .3s ease-in-out;
+
+}
+
+.lightgrey-bg .btn-allcat:hover, .lightgrey-bg .btn-allcat:focus, .lightgrey-bg .btn-allcat:active:hover {
+
+    background-color: #d39e0a;
+    color: #fff;
+    border: 1px solid #d39e0a;
+    transition: .3s ease-in-out;
+
+}
+
+
+
+
+
+
+.jobers-item-block {
+	/*padding-top: 30px;*/
+    /* border: 1px solid transparent; */
+    margin-bottom: 20px;
+    border-radius: 5px;
+    /* box-shadow: rgba(57, 73, 76, 0.35) 0px 1px 6px; */
+    border: 1px solid #f1f1f1;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+    transition: .3s ease-in-out;
+    background-color: #fff;
+    position: relative;
+    text-decoration: none;
+    z-index: 3;
+    overflow: hidden;
+    height: 230px;
+    max-height: 230px;
+}
+.profil-cv-list .jobers-item-block:hover, .profil-cv-list .jobers-item-block:focus,
+.item-blocks-condensed .jobers-item-block:hover, .item-blocks-condensed .jobers-item-block:focus {
+	border-color: transparent;
+	color: initial;
+}
+.profil-cv-list .jobers-item-block.height-ajust {
+	height: 235px;
+	max-height: 240px;
+}
+
+.profil-cv-list .jobers-item-block {
+    height: 195px;
+    max-height: 200px;
+    overflow: hidden;
+}
+.jobers-item-block img {
+	max-width: unset;
+}
+.jobers-item-block .media {
+	padding: 10px 10px 5px;
+}
+.jobers-item-block .media .media-left {
+	padding-right: 20px;
+}
+.jobers-item-block h4 {
+	font-size: 14px;
+	font-weight: bold;
+}
+.result-text {
+	font-size: 14px;
+}
+.view-profile-btn {
+	text-transform: none;
+	background-color: #318ce7;
+	font-size: 14px;
+	border-radius: 3px;
+	margin-bottom: 15px;
+	z-index: 2;
+}
+.jobers-item-block .view-profile-btn {
+	position: absolute;
+	top: 10%;
+	right: -80%;
+	padding-right: 10px;
+	transition: .5s ease-in-out;
+}
+.jobers-item-block:hover .view-profile-btn {
+	right: -1%;
+}
+
+.jobers-item-block .media-body {
+	height: 106px;
+	max-height: 106px;
+}
+.jobers-item-block .media-body p {
+	overflow: hidden;
+	word-break: break-all;
+	/*white-space: nowrap;*/
+	text-overflow: ellipsis;
+	color: #444;
+	max-width: 90%;
+	margin-bottom: 5%;
+}
+.jobers-item-block .media-body .box-details {
+	margin-bottom: 5px;
+}
+
+.shadow2 {
+	/*-moz-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+	-webkit-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+	box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+	
+	-moz-box-shadow: 0 3px 15px 0 rgba(0,0,0,.1);
+	-webkit-box-shadow: 0 3px 15px 0 rgba(0,0,0,.1);
+	box-shadow: 0 3px 15px 0 rgba(0,0,0,.1);*/
+	background-color: #fff !important;
+}
+.shadow2:hover {
+	/*-webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+	-moz-box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);*/
+
+	-webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+	-moz-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+	box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+}
+
+.profil-cv-list {
+	/*margin-top: 90px;*/
+}
+.itemlist-details {
+	padding-left: 15px;
+}
+
+.pt-5 {
+  padding-top: 5px;
+}
+.pt-10 {
+  padding-top: 10px;
+}
+.mb-5 {
+  margin-bottom: 5px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+.mb-40 {
+  margin-bottom: 40px;
+}
+.pb-5 {
+ 	padding-bottom: 5px;
+ }
+.pb-10 {
+  padding-bottom: 10px;
+}
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+.pt-20 {
+  padding-top: 20px;
+}
+.pt-40 {
+  padding-top: 40px;
+}
+
+/**
+ * Jober Profile page 
+ */
+
+.jober-profile-page {
+	background-color: #ffffff;
+	/*-moz-box-shadow: 0 3px 15px 0 rgba(0,0,0,.1);
+	-webkit-box-shadow: 0 3px 15px 0 rgba(0,0,0,.1);
+	box-shadow: 0 3px 15px 0 rgba(0,0,0,.1);*/
+	font-family: 'Source Sans Pro',sans-serif;
+	margin-bottom: 40px;
+	border: 1px solid #eee;
+}
+.jober-profile-photo {
+	width: 340px;
+	padding-bottom: 10px;
+}
+.jober-profile-header-name header {
+	border-bottom: 1px solid #eeeeee;
+	font-family: 'Source Sans Pro',sans-serif;
+	padding-bottom: 10px;
+}
+.jober-profile-header-name header h1{
+	color: #333;
+	font-weight: 700;
+	overflow: hidden;
+	word-break: break-all;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.jober-profile-header-name header p {
+	color: #777;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+.jober-profile-header-name .job-title {
+	color: #777;
+	font-size: 1.1em;
+	font-weight: 600;
+	padding-bottom: 10px;
+}
+.jober-profile-header-details {
+	
+} 
+.jober-profile-socials {
+	-moz-box-shadow: 0 3px 15px 0 rgba(0,0,0,.1);
+	-webkit-box-shadow: 0 3px 15px 0 rgba(0,0,0,.1);
+	box-shadow: 0 3px 15px 0 rgba(0,0,0,.1);
+	text-align: center;
+	min-height: 48px;
+}
+.jober-profile-container .social-icons a {
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 16px;
+}
+.jober-profile-container .social-icons a:hover {
+    -moz-box-shadow: 0 3px 15px 0 rgba(0,0,0,.1);
+	-webkit-box-shadow: 0 3px 15px 0 rgba(0,0,0,.1);
+	box-shadow: 0 3px 15px 0 rgba(0,0,0,.1);
+}
+.bg-main {
+	background-color: #318ce7;
+	color: #ffffff;
+}
+.jober-profile-page img {
+	max-width: unset;
+}
+.jober-profile-page .table > tbody > tr > td {
+	border-color: transparent;
+	color: #777;
+}
+.jober-profile-page .table > tbody > tr > td.title {
+	color: #333;
+	font-size: 0.9em;
+	font-weight: 600;
+	width: 10%;
+}
+.jober-profile-page .job-profil-infos .table > tbody > tr > td.title {
+	width: 30%;
+}
+
+.c-content-panel a.thumbnail.active, .c-content-panel a.thumbnail:focus, 
+.c-content-panel a.thumbnail:hover {
+	border-color: transparent;
+}
+.allo-result-count h2 {
+	font-size: 1.2em;
+}
+.text-infos {
+	font-weight: 600;
+}
+
+.jober-profile-page header {
+	padding-
+}
+.job-profil-img .media-body {
+	padding-left: 30px;
+	vertical-align: middle;
+}
+.job-profil-img .media-heading {
+	color: #333;
+	font-weight: 700;
+}
+.job-profil-infos, .job-profil-description {
+	padding: 0 15px;
+	margin-top: 30px;
+}
+.pr-title {
+	color: #333;
+	font-weight: 600;
+}
+.job-profil-description {
+	padding-bottom: 30px;
+}
+.pr-header {
+	padding: 30px 30px 0px;
+}
+.jober-profile-page .table-responsive {
+	padding: 0px 30px;
+	font-size: 1.1em;
+}
+.jober-profile-page .pr-cv-header h3 {
+    background-color: #efeeee;
+    padding: 15px;
+}
+.jober-profile-page .allo-details-box {
+	margin-bottom: 15px;
+}
+.job-profil-img .allo-details-box {
+	font-size: 1em;
+	background-color: unset;
+	border: 1px solid #f5f5f5;
+	margin-right: 5px;
+	color: #777;
+}
+/* =================================
+** Responsive styles 
+====================================*/
+
+
+/** Higher screens+ **/
+@media only screen and (min-width : 1921px){
+
+}
+
+
+/** Desktop+ **/
+@media (min-width: 1200px) {
+	
+	
+}
+
+
+/** Laptop **/
+@media (max-width: 1200px) {
+
+}
+
+
+/** Laptop+ **/
+@media (min-width: 991px) {
+	
+}
+
+
+/** Laptop **/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+
+/** Large Tablets **/
+@media (max-width: 992px) {
+
+}
+
+
+/** Tablets (landscape mode)  **/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+
+/** Tablets+  **/
+@media (min-width: 768px) {
+
+}
+
+
+/** Tablets (portrait mode)  **/
+@media (min-width : 481px) and (max-width : 768px) {
+
+}
+
+
+/** Smartphone landscape mode / Mini Tablet **/
+@media (max-width: 767px) {
+	.jobers-item-block .media-body p {
+		width: 62%;
+	}
+}
+
+
+/** Smartphone landscape mode / Mini Tablet **/
+@media (max-width: 600px) {
+	
+}
+
+
+/** Smartphone portrait mode **/
+@media (max-width: 480px) {
+	
+}
+
+
+/** Normal phone portrait mode+ **/
+@media (min-width: 320px) {
+	
+}
+
+/* newly added */
+
+.jober-profile-page .media {
+	position: relative;
+}
+.jober-profile-page .jober-ref {
+	position: absolute;
+	top: 5%;
+	right: 5px;
+}

@@ -1,0 +1,1 @@
+define(['jquery','owlslider'],function($){return function(config,element){if($(element).length){$(element).addClass("owl-carousel");$(element).owlCarousel(config);}}});

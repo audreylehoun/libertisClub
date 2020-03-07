@@ -1,0 +1,119 @@
+/*
+
+Conçu par :
+
+--------- Développeur Web -----------
+LIGAN O. F. Patrick ( +229 67 44 62 18)
+
+ */
+.club-header, #club-header-bg, .club-layout-cell, .club-layout-wrapper, .club-footer, .club-nav, #club-hmenu-bg, .club-sheet,
+.clearfix {
+   zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).className="cleared");
+}
+
+.club-textblock > div {
+   display: block;
+   line-height: normal;
+   zoom: 1;
+}
+
+.club-header
+{
+   z-index: 1;
+   background-image: [headerimage];
+   background-position: [headerposition];
+}
+
+#club-header-bg 
+{
+   display: none;
+}
+
+.club-content-layout, .club-content-layout-row, .club-layout-cell 
+{
+   display: block;
+   zoom: 1;
+}
+.club-layout-cell
+{
+   position:relative;
+   float: left;
+   clear: right;
+}
+
+ul.club-vmenu, ul.club-vmenu ul, ul.club-vmenu li{
+   zoom: 1;
+}
+
+ul.club-vmenu ul 
+{
+}
+
+input[type="text"]
+{
+   margin:0 0 0 -3px;
+   zoom:expression(runtimeStyle.zoom = 1, parentNode.insertBefore(document.createElement('div'), this).appendChild(this));
+}
+
+* html input[type="text"]
+{
+   margin :0;
+}
+
+form.club-search>input[type="text"]
+{
+   margin:0 0 0 -3px;
+   zoom:expression(runtimeStyle.zoom = 1, parentNode.insertBefore(document.createElement('div'), this).appendChild(this));
+}
+
+form.club-search div>input[type="text"]
+{
+   width: 100%;
+}
+
+* html form.club-search>input[type="text"] 
+{
+   margin :0;
+}
+
+.club-postheadericons span{
+   zoom: 1;
+}
+.club-postcontent {
+   height: 1%;
+}
+
+.close-alt, .arrow-right-alt, .arrow-left-alt {
+   display: block !important;
+}
+.cw, .ccw {
+   display: none !important;
+}
+
+.club-sidebar1
+{
+   background: none !important;
+   border: none !important;
+   zoom:expression(runtimeStyle.zoom=1, parentNode.parentNode.insertBefore(document.createElement('div'),parentNode.parentNode.firstChild).className='club-sidebar1-bg' + (className.indexOf('club-sidebar1-fix') == -1 ? '' : ' club-sidebar1-bg-fix' ));
+}
+
+.club-sidebar1-bg 
+{
+   border-right:1px dotted #B5B5B5;
+   position:absolute;
+   z-index:-2;
+   direction: ltr;
+   left:  0;
+   bottom:0;
+   top:0;
+   width: 200px;
+   overflow:hidden;
+   display:block;
+}
+
+.club-content 
+{
+   width: auto;
+   float:none;
+}
+

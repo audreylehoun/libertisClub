@@ -1,0 +1,143 @@
+
+fieldset {
+ padding:20px 20px 20px 20px;
+ margin-bottom:10px;
+ border:1px solid #red;
+    height: 400;
+    float: left;
+ }
+
+legend {color:#DF3F3F;
+ font-weight:bold
+ }
+  margin-top:10px;
+ display:block;
+ }
+label.inline {
+ display:inline;
+ margin-right:50px;
+ }
+input textarea, select, option {
+ background-color:#FFF3F3;
+ }
+input, textarea, select {
+ padding:3px;
+ border:1px solid #F5C5C5;
+ border-radius:5px;
+ width:200px;
+ box-shadow:1px 1px 2px #C0C0C0 inset;
+ }
+select {
+ margin-top:10px;
+ }
+input[type=radio] {
+ background-color:transparent;
+ border:none;
+ width:10px;
+ }
+input[type=submit], input[type=reset] {
+ width:100px;
+ margin-left:5px;
+ box-shadow:1px 1px 1px #D83F3D;
+ cursor:pointer;
+ }
+
+.latable{
+  border-collapse: collapse;
+      float: right;
+    position: absolute;
+    margin-left: 100;
+   
+}
+
+td{
+  border: 1px solid black;
+  padding: 10px;
+}
+
+table.position
+{
+   position: relative;
+   width: 100%;
+   table-layout: fixed;
+}
+
+#global {
+   overflow:auto;
+    margin-top: 30px; 
+}
+#gauche {
+   float:left;
+   width:30%;
+    height: 500px;
+    margin-left: 50px;    
+    box-shadow: 0px 0px 10px #bbb;
+   
+    text-align: right;
+    padding: 20px;
+      display: flex; 
+    flex-flow: row wrap;
+    justify-content: center;
+}
+#droit {
+  
+    margin-left: 580px;
+     margin-top: 0  0px;
+   height: 500px;
+   
+}
+    
+    
+    
+    
+#bloc_prestation {
+  border-style:  2px solid #C7C7C7;
+     border-bottom: 2px solid #C7C7C7;
+  border-right: 3px solid #C7C7C7;
+     border-left: 1px solid #C7C7C7;
+     border-top: 3px solid #C7C7C7;
+  padding: 10px;
+  float: left;
+  width: 750px;
+      height: 300px;
+  margin-left: 40px;
+  background-color: white;
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-image: url(images/terrekpZ1goldrorange60.png);
+    list-style-type: none;
+   
+}
+
+table {
+border: medium solid #F5C5C5;
+border-collapse: collapse;
+width: 50%;
+}
+th {
+font-family: monospace;
+border: thin solid #F5C5C5;
+width: 50%;
+padding: 5px;
+background-color: #F5C5C5;
+background-image: url(sky.jpg);
+}
+td {
+font-family: sans-serif;
+border: thin solid #6495ed;
+width: 50%;
+padding: 5px;
+text-align: center;
+background-color: #ffffff;
+}
+caption {
+font-family: sans-serif;
+}
+
+.gau{
+    width :450px;
+    margin-left:100px;
+}
+
+  
+

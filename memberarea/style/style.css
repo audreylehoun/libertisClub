@@ -1,0 +1,2525 @@
+/*
+
+Con�u par :
+
+--------- D�veloppeur Web -----------
+LIGAN O. F. Patrick ( +229 67 44 62 18)
+
+ */
+
+#boutondeconnect
+{
+	float:right;
+	margin:0px 200px 10px;
+}
+
+:-moz-any #boutondeconnect
+{
+	float:right;
+	margin:-20px 200px 10px;
+}
+
+.club-succes
+{
+	background-color: #EBF6E0;
+	color: #5F9025;
+	border: 1px solid #5F9025;
+	padding: 14px 18px;
+	background-image: -moz-linear-gradient(center bottom , #EBF6E0 0%, #F0FAE7 100%);
+	max-width:300px;
+	margin:20px auto;
+	text-align:center;
+	font-size:15px;
+}
+
+.club-echec
+{
+	background-color: rgb(204,36,66);
+	color: #FFFFFF;
+	border: 1px solid rgb(120,1,10);
+	padding: 14px 18px;
+	background-image: -moz-linear-gradient(center bottom , rgb(204,36,66) 0%, rgb(232,70,102) 50%);
+	max-width:300px;
+	margin:20px auto;
+	text-align:center;
+	font-size:15px;
+}
+
+.libertis-smstextmessage
+{
+	display:inline-block;
+	width:80%;
+	height:130px;
+	margin: 10px 10px;
+	text-align:center;
+	border: 7px solid rgb(255, 0, 0);
+	border-radius: 30px;
+	padding: 4px 8px;
+}
+
+.libertis-smstextamis
+{
+	display:inline-block;
+	width:80%;
+	height:130px;
+	margin: 10px 10px;
+	text-align:center;
+	border: 7px solid rgb(50, 178, 50);
+	border-radius: 30px;
+	padding: 4px 8px;
+}
+
+
+.libertis-smstext
+{
+	display:inline-block;
+	width:80%;
+	height:130px;
+	margin: 10px 10px;
+	text-align:center;
+	border: 7px solid #01A2F9;
+	border-radius: 30px;
+	padding: 4px 8px;
+}
+
+#club-main
+{
+   background: #FFFFFF;
+   margin:0 auto;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   position: relative;
+   width: 100%;
+   min-height: 100%;
+   left: 0;
+   top: 0;
+   cursor:default;
+   overflow:hidden;
+}
+table, ul.club-hmenu
+{
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, ul, ol, li
+{
+   margin: 0;
+   padding: 0;
+}
+
+/* Reset buttons border. It's important for input and button tags.
+ * border-collapse should be separate for shadow in IE.
+ */
+.club-button
+{
+   border-collapse: separate;
+   -webkit-background-origin: border !important;
+   -moz-background-origin: border !important;
+   background-origin: border-box !important;
+   background: #01A2F9;
+   background: linear-gradient(top, #0195E4 0, #01A5FE 28%, #34B7FE 85%, #0BA9FE 86%, #0BA9FE 100%) no-repeat;
+   background: -webkit-linear-gradient(top, #0195E4 0, #01A5FE 28%, #34B7FE 85%, #0BA9FE 86%, #0BA9FE 100%) no-repeat;
+   background: -moz-linear-gradient(top, #0195E4 0, #01A5FE 28%, #34B7FE 85%, #0BA9FE 86%, #0BA9FE 100%) no-repeat;
+   background: -o-linear-gradient(top, #0195E4 0, #01A5FE 28%, #34B7FE 85%, #0BA9FE 86%, #0BA9FE 100%) no-repeat;
+   background: -ms-linear-gradient(top, #0195E4 0, #01A5FE 28%, #34B7FE 85%, #0BA9FE 86%, #0BA9FE 100%) no-repeat;
+   background: linear-gradient(top, #0195E4 0, #01A5FE 28%, #34B7FE 85%, #0BA9FE 86%, #0BA9FE 100%) no-repeat;
+   -svg-background: linear-gradient(top, #0195E4 0, #01A5FE 28%, #34B7FE 85%, #0BA9FE 86%, #0BA9FE 100%) no-repeat;
+   border:1px solid #01A2F9;
+   padding:0 20px;
+   margin:0 auto;
+   height:35px;
+}
+
+.club-postcontent,
+.club-postheadericons,
+.club-postfootericons,
+.club-blockcontent,
+ul.club-vmenu a
+{
+   text-align: left;
+}
+
+.club-postcontent,
+.club-postcontent li,
+.club-postcontent table,
+.club-postcontent a,
+.club-postcontent a:link,
+.club-postcontent a:visited,
+.club-postcontent a.visited,
+.club-postcontent a:hover,
+.club-postcontent a.hovered
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   line-height: 175%;
+}
+
+.club-postcontent p
+{
+   margin: 13px 0;
+}
+
+.club-postcontent h1, .club-postcontent h1 a, .club-postcontent h1 a:link, .club-postcontent h1 a:visited, .club-postcontent h1 a:hover,
+.club-postcontent h2, .club-postcontent h2 a, .club-postcontent h2 a:link, .club-postcontent h2 a:visited, .club-postcontent h2 a:hover,
+.club-postcontent h3, .club-postcontent h3 a, .club-postcontent h3 a:link, .club-postcontent h3 a:visited, .club-postcontent h3 a:hover,
+.club-postcontent h4, .club-postcontent h4 a, .club-postcontent h4 a:link, .club-postcontent h4 a:visited, .club-postcontent h4 a:hover,
+.club-postcontent h5, .club-postcontent h5 a, .club-postcontent h5 a:link, .club-postcontent h5 a:visited, .club-postcontent h5 a:hover,
+.club-postcontent h6, .club-postcontent h6 a, .club-postcontent h6 a:link, .club-postcontent h6 a:visited, .club-postcontent h6 a:hover,
+.club-blockheader .t, .club-blockheader .t a, .club-blockheader .t a:link, .club-blockheader .t a:visited, .club-blockheader .t a:hover,
+.club-vmenublockheader .t, .club-vmenublockheader .t a, .club-vmenublockheader .t a:link, .club-vmenublockheader .t a:visited, .club-vmenublockheader .t a:hover,
+.club-headline, .club-headline a, .club-headline a:link, .club-headline a:visited, .club-headline a:hover,
+.club-slogan, .club-slogan a, .club-slogan a:link, .club-slogan a:visited, .club-slogan a:hover,
+.club-postheader, .club-postheader a, .club-postheader a:link, .club-postheader a:visited, .club-postheader a:hover
+{
+   font-size: 22px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   line-height: 120%;
+}
+
+.club-postcontent a, .club-postcontent a:link
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   color: #01A5FE;
+}
+
+.club-postcontent a:visited, .club-postcontent a.visited
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   color: #01A5FE;
+}
+
+.club-postcontent  a:hover, .club-postcontent a.hover
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   color: #39B9FE;
+}
+
+.club-postcontent h1
+{
+   color: #808080;
+   margin: 10px 0 0;
+   font-size: 26px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.club-blockcontent h1
+{
+   margin: 10px 0 0;
+   font-size: 26px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.club-postcontent h1 a, .club-postcontent h1 a:link, .club-postcontent h1 a:hover, .club-postcontent h1 a:visited, .club-blockcontent h1 a, .club-blockcontent h1 a:link, .club-blockcontent h1 a:hover, .club-blockcontent h1 a:visited
+{
+   font-size: 26px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.club-postcontent h2
+{
+   color: #9C9C9C;
+   margin: 10px 0 0;
+   font-size: 22px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.club-blockcontent h2
+{
+   margin: 10px 0 0;
+   font-size: 22px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.club-postcontent h2 a, .club-postcontent h2 a:link, .club-postcontent h2 a:hover, .club-postcontent h2 a:visited, .club-blockcontent h2 a, .club-blockcontent h2 a:link, .club-blockcontent h2 a:hover, .club-blockcontent h2 a:visited
+{
+   font-size: 22px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.club-postcontent h3
+{
+   color: #39B9FE;
+   margin: 10px 0 0;
+   font-size: 20px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.club-blockcontent h3
+{
+   margin: 10px 0 0;
+   font-size: 20px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.club-postcontent h3 a, .club-postcontent h3 a:link, .club-postcontent h3 a:hover, .club-postcontent h3 a:visited, .club-blockcontent h3 a, .club-blockcontent h3 a:link, .club-blockcontent h3 a:hover, .club-blockcontent h3 a:visited
+{
+   font-size: 20px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.club-postcontent h4
+{
+   color: #696969;
+   margin: 10px 0 0;
+   font-size: 18px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.club-blockcontent h4
+{
+   margin: 10px 0 0;
+   font-size: 18px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.club-postcontent h4 a, .club-postcontent h4 a:link, .club-postcontent h4 a:hover, .club-postcontent h4 a:visited, .club-blockcontent h4 a, .club-blockcontent h4 a:link, .club-blockcontent h4 a:hover, .club-blockcontent h4 a:visited
+{
+   font-size: 18px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.club-postcontent h5
+{
+   color: #696969;
+   margin: 10px 0 0;
+   font-size: 15px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.club-blockcontent h5
+{
+   margin: 10px 0 0;
+   font-size: 15px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.club-postcontent h5 a, .club-postcontent h5 a:link, .club-postcontent h5 a:hover, .club-postcontent h5 a:visited, .club-blockcontent h5 a, .club-blockcontent h5 a:link, .club-blockcontent h5 a:hover, .club-blockcontent h5 a:visited
+{
+   font-size: 15px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.club-postcontent h6
+{
+   color: #B8B8B8;
+   margin: 10px 0 0;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.club-blockcontent h6
+{
+   margin: 10px 0 0;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.club-postcontent h6 a, .club-postcontent h6 a:link, .club-postcontent h6 a:hover, .club-postcontent h6 a:visited, .club-blockcontent h6 a, .club-blockcontent h6 a:link, .club-blockcontent h6 a:hover, .club-blockcontent h6 a:visited
+{
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+header, footer, article, nav, #club-hmenu-bg, .club-sheet, .club-hmenu a, .club-vmenu a, .club-slidenavigator > a, .club-checkbox:before, .club-radiobutton:before
+{
+   -webkit-background-origin: border !important;
+   -moz-background-origin: border !important;
+   background-origin: border-box !important;
+}
+
+header, footer, article, nav, #club-hmenu-bg, .club-sheet, .club-slidenavigator > a, .club-checkbox:before, .club-radiobutton:before
+{
+   display: block;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+ul
+{
+   list-style-type: none;
+}
+
+ol
+{
+   list-style-position: inside;
+}
+
+html, body
+{
+   height: 100%;
+}
+
+body
+{
+   padding: 0;
+   margin:0;
+   min-width: 80%;
+   color: #404040;
+}
+
+.club-header:before, #club-header-bg:before, .club-layout-cell:before, .club-layout-wrapper:before, .club-footer:before, .club-nav:before, #club-hmenu-bg:before, .club-sheet:before
+{
+   width: 100%;
+   content: " ";
+   display: table;
+}
+.club-header:after, #club-header-bg:after, .club-layout-cell:after, .club-layout-wrapper:after, .club-footer:after, .club-nav:after, #club-hmenu-bg:after, .club-sheet:after,
+.cleared, .clearfix:after {
+   clear: both;
+   font: 0/0 serif;
+   display: block;
+   content: " ";
+}
+
+form
+{
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+table.position
+{
+   position: relative;
+   width: 100%;
+   table-layout: fixed;
+}
+
+li h1, .club-postcontent li h1, .club-blockcontent li h1
+{
+   margin:1px;
+}
+li h2, .club-postcontent li h2, .club-blockcontent li h2
+{
+   margin:1px;
+}
+li h3, .club-postcontent li h3, .club-blockcontent li h3
+{
+   margin:1px;
+}
+li h4, .club-postcontent li h4, .club-blockcontent li h4
+{
+   margin:1px;
+}
+li h5, .club-postcontent li h5, .club-blockcontent li h5
+{
+   margin:1px;
+}
+li h6, .club-postcontent li h6, .club-blockcontent li h6
+{
+   margin:1px;
+}
+li p, .club-postcontent li p, .club-blockcontent li p
+{
+   margin:1px;
+}
+
+
+.club-shapes
+{
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   overflow: hidden;
+   z-index: 0;
+}
+
+.club-slider-inner {
+   position: relative;
+   overflow: hidden;
+   width: 100%;
+   height: 100%;
+}
+
+.club-slidenavigator > a {
+   display: inline-block;
+   vertical-align: middle;
+   outline-style: none;
+   font-size: 1px;
+}
+
+.club-slidenavigator > a:last-child {
+   margin-right: 0 !important;
+}
+
+.club-object598796266
+{
+    display: block;
+    left: 7.1%;
+    margin-left: -8px;
+    position: absolute;
+    top: 6px;
+    width: 117px;
+    height: 91px;
+    background-image: url('../images/object598796266.png');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+.club-headline
+{
+  display: inline-block;
+  position: absolute;
+  min-width: 50px;
+  top: 32px;
+  left: 38.75%;
+  line-height: 100%;
+  margin-left: -123px !important;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  z-index: 101;
+}
+
+.club-headline,
+.club-headline a,
+.club-headline a:link,
+.club-headline a:visited,
+.club-headline a:hover
+{
+font-size: 36px;
+font-family: Georgia, 'Times New Roman', Times, Serif;
+font-weight: normal;
+font-style: normal;
+text-decoration: none;
+text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+  padding: 0;
+  margin: 0;
+  color: #FFFFFF !important;
+  white-space: nowrap;
+}
+
+
+
+
+
+
+.club-header
+{
+   border-bottom:7px solid #262626;
+   margin:-20px auto 0px;
+   position:relative;
+   height: 110px;
+   background-image: url('../images/header.jpg');
+   background-position: center top;
+   background-repeat: no-repeat;
+}
+
+.responsive .club-header
+{
+   background-image: url('../images/header.jpg');
+   background-position: center center;
+}
+
+.club-header-inner{
+   position: relative;
+   width: 80%;
+   z-index: auto !important;
+   margin: 0 auto;
+}
+
+.club-header>.widget
+{
+   position:absolute;
+   z-index:101;
+}
+
+.club-sheet
+{
+   background: #FFFFFF;
+   margin:10px auto 0;
+   position:relative;
+   cursor:auto;
+   width: 80%;
+   z-index: auto !important;
+}
+
+.club-layout-wrapper
+{
+   position: relative;
+   margin: 20px auto 0 auto;
+   z-index: auto !important;
+}
+
+.club-content-layout
+{
+   display: table;
+   width: 100%;
+   table-layout: fixed;
+}
+
+.club-content-layout-row
+{
+   display: table-row;
+}
+
+.club-layout-cell
+{
+   display: table-cell;
+   vertical-align: top;
+}
+
+/* need only for content layout in post content */
+.club-postcontent .club-content-layout
+{
+   border-collapse: collapse;
+}
+
+.club-vmenublock
+{
+   margin:3px;
+}
+div.club-vmenublock img
+{
+   margin: 0;
+}
+
+.club-vmenublockheader
+{
+   padding:10px 0;
+   margin:0 auto 7px;
+}
+.club-vmenublockheader .t,
+.club-vmenublockheader .t a,
+.club-vmenublockheader .t a:link,
+.club-vmenublockheader .t a:visited,
+.club-vmenublockheader .t a:hover
+{
+   color: #10ABFE;
+   font-size: 20px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   margin: 0 10px;
+}
+
+.club-vmenublockcontent
+{
+   margin:0 auto;
+}
+
+ul.club-vmenu, ul.club-vmenu ul
+{
+   list-style: none;
+   display: block;
+}
+
+ul.club-vmenu, ul.club-vmenu li
+{
+   display: block;
+   margin: 0;
+   padding: 0;
+   width: auto;
+   line-height: 0;
+}
+
+ul.club-vmenu
+{
+   margin-top: 0;
+   margin-bottom: 0;
+}
+
+ul.club-vmenu ul
+{
+   display: none;
+   margin: 0;
+   padding: 0;
+   position: relative;
+}
+
+ul.club-vmenu ul.active
+{
+   display: block;
+}
+
+ul.club-vmenu>li>a
+{
+   padding:0 15px;
+   margin:0 auto;
+   color: #808080;
+   min-height: 30px;
+   line-height: 30px;
+}
+ul.club-vmenu a
+{
+   display: block;
+   cursor: pointer;
+   z-index: 1;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   position:relative;
+}
+
+ul.club-vmenu li{
+   position:relative;
+}
+
+ul.club-vmenu>li
+{
+   margin-top: 0;
+}
+ul.club-vmenu>li>ul
+{
+   padding: 0;
+   margin-top: 0;
+   margin-bottom: 0;
+}
+ul.club-vmenu>li:first-child
+{
+   margin-top:0;
+}
+
+ul.club-vmenu>li>a:before
+{
+   content:url('../images/vmenuitemicon.png');
+   margin-right:5px;
+   bottom: 2px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+}
+.opera ul.club-vmenu>li>a:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+ul.club-vmenu>li>a.active:before
+{
+   content:url('../images/vmenuactiveitemicon.png');
+   margin-right:5px;
+   bottom: 2px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+}
+.opera ul.club-vmenu>li>a.active:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+ul.club-vmenu>li>a:hover:before,  ul.club-vmenu>li>a.active:hover:before,  ul.club-vmenu>li:hover>a:before,  ul.club-vmenu>li:hover>a.active:before
+{
+   content:url('../images/vmenuhovereditemicon.png');
+   margin-right:5px;
+   bottom: 2px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+}
+.opera ul.club-vmenu>li>a:hover:before, .opera   ul.club-vmenu>li>a.active:hover:before, .opera   ul.club-vmenu>li:hover>a:before, .opera   ul.club-vmenu>li:hover>a.active:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+ul.club-vmenu>li>a:hover, ul.club-vmenu>li>a.active:hover
+{
+   padding:0 15px;
+   margin:0 auto;
+}
+ul.club-vmenu>li>a:hover, ul.club-vmenu>li>a.active:hover
+{
+   text-decoration: none;
+}
+
+ul.club-vmenu a:hover, ul.club-vmenu a.active:hover
+{
+   color: #01A5FE;
+}
+
+ul.club-vmenu>li>a.active:hover>span.border-top, ul.club-vmenu>li>a.active:hover>span.border-bottom
+{
+   background-color: transparent;
+}
+
+ul.club-vmenu>li>a.active
+{
+   padding:0 15px;
+   margin:0 auto;
+   text-decoration: none;
+   color: #01A5FE;
+}
+
+ul.club-vmenu>li>ul:before
+{
+   margin:0 auto;
+   display: block;
+   position: absolute;
+   content: ' ';
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+}
+
+ul.club-vmenu li li a
+{
+   margin:0 auto;
+   position: relative;
+}
+ul.club-vmenu ul li
+{
+   margin: 0;
+   padding: 0;
+}
+ul.club-vmenu li li{
+   position: relative;
+   margin-top: 0;
+}
+
+ul.club-vmenu ul a
+{
+   display: block;
+   position: relative;
+   min-height: 22px;
+   overflow: visible;
+   padding: 0;
+   padding-left: 27px;
+   padding-right: 27px;
+   z-index: 0;
+   line-height: 22px;
+   color: #808080;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   margin-left: 0;
+   margin-right: 0;
+}
+
+ul.club-vmenu ul a:visited, ul.club-vmenu ul a.active:hover, ul.club-vmenu ul a:hover, ul.club-vmenu ul a.active
+{
+   line-height: 22px;
+   color: #808080;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   margin-left: 0;
+   margin-right: 0;
+}
+
+ul.club-vmenu ul ul a
+{
+   padding-left: 54px;
+}
+ul.club-vmenu ul ul ul a
+{
+   padding-left: 81px;
+}
+ul.club-vmenu ul ul ul ul a
+{
+   padding-left: 108px;
+}
+ul.club-vmenu ul ul ul ul ul a
+{
+   padding-left: 135px;
+}
+
+ul.club-vmenu ul>li>a:hover, ul.club-vmenu ul>li>a.active:hover
+{
+   margin:0 auto;
+}
+ul.club-vmenu ul li a:hover, ul.club-vmenu ul li a.active:hover
+{
+   text-decoration: none;
+   color: #01A5FE;
+}
+
+ul.club-vmenu ul a:hover:after
+{
+   background-position: center ;
+}
+ul.club-vmenu ul a.active:hover:after
+{
+   background-position: center ;
+}
+ul.club-vmenu ul a.active:after
+{
+   background-position: bottom ;
+}
+
+ul.club-vmenu ul>li>a.active
+{
+   margin:0 auto;
+}
+ul.club-vmenu ul a.active, ul.club-vmenu ul a:hover, ul.club-vmenu ul a.active:hover
+{
+   text-decoration: none;
+   color: #01A5FE;
+}
+
+.club-block
+{
+   margin:3px;
+}
+div.club-block img
+{
+   border: none;
+   margin: 0;
+}
+
+.club-blockheader
+{
+   padding:6px 5px;
+   margin:0 auto 2px;
+}
+.club-blockheader .t,
+.club-blockheader .t a,
+.club-blockheader .t a:link,
+.club-blockheader .t a:visited,
+.club-blockheader .t a:hover
+{
+   color: #878787;
+   font-size: 20px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   margin: 0 5px;
+}
+
+.club-blockcontent
+{
+   padding:5px;
+   margin:0 auto;
+   color: #404040;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   line-height: 175%;
+}
+.club-blockcontent table,
+.club-blockcontent li,
+.club-blockcontent a,
+.club-blockcontent a:link,
+.club-blockcontent a:visited,
+.club-blockcontent a:hover
+{
+   color: #404040;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   line-height: 175%;
+}
+
+.club-blockcontent p
+{
+   margin: 0 5px;
+}
+
+.club-blockcontent a, .club-blockcontent a:link
+{
+   color: #39B9FE;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.club-blockcontent a:visited, .club-blockcontent a.visited
+{
+   color:#39B9FE;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+}
+
+.club-blockcontent a:hover, .club-blockcontent a.hover
+{
+   color: #01A5FE;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+}
+.club-block ul>li:before
+{
+   content:url('../images/blockbullets.png');
+   margin-right:6px;
+   bottom: 2px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+   margin-left: -12px;
+}
+.opera .club-block ul>li:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.club-block li
+{
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   line-height: 175%;
+   color: #696969;
+   margin: 5px 0 0 10px;
+}
+
+.club-block ul>li, .club-block ol
+{
+   padding: 0;
+}
+
+.club-block ul>li
+{
+   padding-left: 12px;
+}
+
+.club-breadcrumbs
+{
+   margin:0 auto;
+}
+
+a.club-button,
+a.club-button:link,
+a:link.club-button:link,
+body a.club-button:link,
+a.club-button:visited,
+body a.club-button:visited,
+input.club-button,
+button.club-button
+{
+   text-decoration: none;
+   font-size: 15px;
+   font-family: 'Times New Roman', Georgia, Times, Serif;
+   font-weight: normal;
+   font-style: normal;
+   position:relative;
+   display: inline-block;
+   vertical-align: middle;
+   white-space: nowrap;
+   text-align: center;
+   color: #FFFFFF;
+   margin: 0 5px 0 0 !important;
+   overflow: visible;
+   cursor: pointer;
+   text-indent: 0;
+   line-height: 15px;
+   -webkit-box-sizing: content-box;
+   -moz-box-sizing: content-box;
+   box-sizing: content-box;
+}
+
+.club-button img
+{
+   margin: 0;
+   vertical-align: middle;
+}
+
+.firefox2 .club-button
+{
+   display: block;
+   float: left;
+}
+
+input, select, textarea, a.club-search-button span
+{
+   vertical-align: middle;
+   font-family: 'Times New Roman', Georgia, Times, Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+
+.club-block select
+{
+   width:96%;
+}
+
+input.club-button
+{
+   float: none !important;
+}
+
+.club-button.active, .club-button.active:hover
+{
+   background: #262626;
+   background: linear-gradient(top, #242424 0, #424242 85%, #303030 86%, #303030 100%) no-repeat;
+   background: -webkit-linear-gradient(top, #242424 0, #424242 85%, #303030 86%, #303030 100%) no-repeat;
+   background: -moz-linear-gradient(top, #242424 0, #424242 85%, #303030 86%, #303030 100%) no-repeat;
+   background: -o-linear-gradient(top, #242424 0, #424242 85%, #303030 86%, #303030 100%) no-repeat;
+   background: -ms-linear-gradient(top, #242424 0, #424242 85%, #303030 86%, #303030 100%) no-repeat;
+   background: linear-gradient(top, #242424 0, #424242 85%, #303030 86%, #303030 100%) no-repeat;
+   -svg-background: linear-gradient(top, #242424 0, #424242 85%, #303030 86%, #303030 100%) no-repeat;
+   border:1px solid #262626;
+   padding:0 20px;
+   margin:0 auto;
+}
+.club-button.active, .club-button.active:hover {
+   color: #FFFFFF !important;
+}
+
+.club-button.hover, .club-button:hover
+{
+   background: #FF4500;
+   background: linear-gradient(top, #F04000 0, #FF4500 17%, #FF713D 85%, #FF5314 86%, #FF5314 100%) no-repeat;
+   background: -webkit-linear-gradient(top, #F04000 0, #FF4500 17%, #FF713D 85%, #FF5314 86%, #FF5314 100%) no-repeat;
+   background: -moz-linear-gradient(top, #F04000 0, #FF4500 17%, #FF713D 85%, #FF5314 86%, #FF5314 100%) no-repeat;
+   background: -o-linear-gradient(top, #F04000 0, #FF4500 17%, #FF713D 85%, #FF5314 86%, #FF5314 100%) no-repeat;
+   background: -ms-linear-gradient(top, #F04000 0, #FF4500 17%, #FF713D 85%, #FF5314 86%, #FF5314 100%) no-repeat;
+   background: linear-gradient(top, #F04000 0, #FF4500 17%, #FF713D 85%, #FF5314 86%, #FF5314 100%) no-repeat;
+   -svg-background: linear-gradient(top, #F04000 0, #FF4500 17%, #FF713D 85%, #FF5314 86%, #FF5314 100%) no-repeat;
+   border:1px solid #FF4500;
+   padding:0 20px;
+   margin:0 auto;
+}
+.club-button.hover, .club-button:hover {
+   color: #FFFFFF !important;
+}
+
+select
+{
+   width: 47%;
+   padding: 3px 0;
+   background: #FAFAFA;
+   border:1px solid #C7C7C7;
+   margin:0 auto;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="url"], textarea, select, input[type="number"], input[type="date"], input[type="file"]
+{
+   background: #FAFAFA;
+   border:1px solid #C7C7C7;
+   margin:0 auto;
+}
+input[type="text"], input[type="password"], input[type="email"], input[type="url"], textarea, select, input[type="number"], input[type="date"], input[type="file"]
+{
+   width: 47%;
+   padding: 10px 4px;
+   border-radius:0px;
+   color: #525252 !important;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   text-shadow: none;
+}
+input.club-error, textarea.club-error
+{
+   background: #FAFAFA;
+   border:1px solid #E2341D;
+   margin:0 auto;
+}
+input.club-error, textarea.club-error {
+   color: #525252 !important;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+form.club-search input[type="text"]
+{
+   background: #FFFFFF;
+   border:1px solid #D6D6D6;
+   margin:0 auto;
+   width: 100%;
+   padding: 4px 0;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   color: #404040 !important;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+form.club-search
+{
+   background-image: none;
+   border: 0;
+   display:block;
+   position:relative;
+   top:0;
+   padding:0;
+   margin:5px;
+   left:0;
+   line-height: 0;
+}
+
+form.club-search input, a.club-search-button
+{
+   top:0;
+   right:0;
+}
+
+form.club-search>input, a.club-search-button{
+   bottom:0;
+   left:0;
+   vertical-align: middle;
+}
+
+form.club-search input[type="submit"], input.club-search-button, a.club-search-button
+{
+   margin:0 auto;
+}
+form.club-search input[type="submit"], input.club-search-button, a.club-search-button {
+   position:absolute;
+   left:auto;
+   display:block;
+   border:none;
+   background:url('../images/searchicon.png') center center no-repeat;
+   width:24px;
+   height: 100%;
+   padding:0;
+   color: #FFFFFF !important;
+   cursor: pointer;
+}
+
+a.club-search-button span.club-search-button-text {
+   display: none;
+}
+
+label.club-checkbox:before
+{
+   background: #FAFAFA;
+   -webkit-border-radius:1px;
+   -moz-border-radius:1px;
+   border-radius:1px;
+   border-width: 0;
+   margin:0 auto;
+   width:16px;
+   height:16px;
+}
+label.club-checkbox
+{
+   cursor: pointer;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   line-height: 16px;
+   display: inline-block;
+   color: #404040 !important;
+}
+
+.club-checkbox>input[type="checkbox"]
+{
+   margin: 0 5px 0 0;
+}
+
+label.club-checkbox.active:before
+{
+   background: #62C7FE;
+   -webkit-border-radius:1px;
+   -moz-border-radius:1px;
+   border-radius:1px;
+   border-width: 0;
+   margin:0 auto;
+   width:16px;
+   height:16px;
+   display: inline-block;
+}
+
+label.club-checkbox.hovered:before
+{
+   background: #E0E0E0;
+   -webkit-border-radius:1px;
+   -moz-border-radius:1px;
+   border-radius:1px;
+   border-width: 0;
+   margin:0 auto;
+   width:16px;
+   height:16px;
+   display: inline-block;
+}
+
+label.club-radiobutton:before
+{
+   background: #FAFAFA;
+   -webkit-border-radius:3px;
+   -moz-border-radius:3px;
+   border-radius:3px;
+   border-width: 0;
+   margin:0 auto;
+   width:12px;
+   height:12px;
+}
+label.club-radiobutton
+{
+   cursor: pointer;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   line-height: 12px;
+   display: inline-block;
+   color: #404040 !important;
+}
+
+.club-radiobutton>input[type="radio"]
+{
+   vertical-align: baseline;
+   margin: 0 5px 0 0;
+}
+
+label.club-radiobutton.active:before
+{
+   background: #C7C7C7;
+   -webkit-border-radius:3px;
+   -moz-border-radius:3px;
+   border-radius:3px;
+   border-width: 0;
+   margin:0 auto;
+   width:12px;
+   height:12px;
+   display: inline-block;
+}
+
+label.club-radiobutton.hovered:before
+{
+   background: #E0E0E0;
+   -webkit-border-radius:3px;
+   -moz-border-radius:3px;
+   border-radius:3px;
+   border-width: 0;
+   margin:0 auto;
+   width:12px;
+   height:12px;
+   display: inline-block;
+}
+
+.club-comments
+{
+   border-top:1px dotted #B5B5B5;
+   margin:0 auto;
+   margin-top: 25px;
+}
+
+.club-comments h2
+{
+   color: #292929;
+}
+
+.club-comment-inner
+{
+   -webkit-border-radius:2px;
+   -moz-border-radius:2px;
+   border-radius:2px;
+   padding:5px;
+   margin:0 auto;
+   margin-left: 96px;
+}
+.club-comment-avatar
+{
+   float:left;
+   width:80px;
+   height:80px;
+   padding:2px;
+   background:#fff;
+   border:1px solid #E8E8E8;
+}
+
+.club-comment-avatar>img
+{
+   margin:0 !important;
+   border:none !important;
+}
+
+.club-comment-content
+{
+   padding:10px 0;
+   color: #404040;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.club-comment
+{
+   margin-top: 6px;
+}
+
+.club-comment:first-child
+{
+   margin-top: 0;
+}
+
+.club-comment-header
+{
+   color: #292929;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   line-height: 100%;
+}
+
+.club-comment-header a,
+.club-comment-header a:link,
+.club-comment-header a:visited,
+.club-comment-header a.visited,
+.club-comment-header a:hover,
+.club-comment-header a.hovered
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   line-height: 100%;
+}
+
+.club-comment-header a, .club-comment-header a:link
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: bold;
+   font-style: normal;
+   color: #878787;
+}
+
+.club-comment-header a:visited, .club-comment-header a.visited
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #878787;
+}
+
+.club-comment-header a:hover,  .club-comment-header a.hovered
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #878787;
+}
+
+.club-comment-content a,
+.club-comment-content a:link,
+.club-comment-content a:visited,
+.club-comment-content a.visited,
+.club-comment-content a:hover,
+.club-comment-content a.hovered
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.club-comment-content a, .club-comment-content a:link
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #0188D0;
+}
+
+.club-comment-content a:visited, .club-comment-content a.visited
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #545454;
+}
+
+.club-comment-content a:hover,  .club-comment-content a.hovered
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #0188D0;
+}
+
+.club-pager
+{
+   -webkit-border-radius:4px;
+   -moz-border-radius:4px;
+   border-radius:4px;
+   padding:6px;
+   margin:2px;
+}
+
+.club-pager>*:last-child,
+.club-pager>*:last-child:hover
+{
+   margin-right:0;
+}
+
+.club-pager>span {
+   cursor:default;
+}
+
+.club-pager>*
+{
+   background: #E0E0E0;
+   -webkit-border-radius:4px;
+   -moz-border-radius:4px;
+   border-radius:4px;
+   padding:10px;
+   margin:0 4px 0 auto;
+   position:relative;
+   display:inline-block;
+   margin-left: 0;
+}
+
+.club-pager a:link,
+.club-pager a:visited
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   color: #212121
+;
+}
+
+.club-pager .active
+{
+   background: #BFBFBF;
+   padding:10px;
+   margin:0 4px 0 auto;
+   color: #FFFFFF
+;
+}
+
+.club-pager .more
+{
+   background: #E0E0E0;
+   margin:0 4px 0 auto;
+}
+.club-pager a.more:link,
+.club-pager a.more:visited
+{
+   color: #002B42
+;
+}
+.club-pager a:hover
+{
+   background: #C7C7C7;
+   padding:10px;
+   margin:0 4px 0 auto;
+}
+.club-pager  a:hover,
+.club-pager  a.more:hover
+{
+   text-decoration: none;
+   color: #292929
+;
+}
+.club-pager>*:after
+{
+   margin:0 0 0 auto;
+   display:inline-block;
+   position:absolute;
+   content: ' ';
+   top:0;
+   width:0;
+   height:100%;
+   right: 0;
+   text-decoration:none;
+}
+
+.club-pager>*:last-child:after{
+   display:none;
+}
+
+.club-commentsform
+{
+   background: #E8E8E8;
+   background: transparent;
+   padding:10px;
+   margin:0 auto;
+   margin-top:25px;
+   color: #292929;
+}
+
+.club-commentsform h2{
+   padding-bottom:10px;
+   margin: 0;
+   color: #292929;
+}
+
+.club-commentsform label {
+   display: inline-block;
+   line-height: 25px;
+}
+
+.club-commentsform input:not([type=submit]), .club-commentsform textarea {
+   box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   width:100%;
+   max-width:100%;
+}
+
+.club-commentsform .form-submit
+{
+   margin-top: 10px;
+}
+.club-post
+{
+   padding:5px;
+}
+a img
+{
+   border: 0;
+}
+
+.club-article img, img.club-article, .club-block img, .club-footer img
+{
+   margin: 7px 7px 7px 7px;
+}
+
+.club-metadata-icons img
+{
+   border: none;
+   vertical-align: middle;
+   margin: 2px;
+}
+
+.club-article table, table.club-article
+{
+   border-collapse: collapse;
+   margin: 1px;
+}
+
+.club-post .club-content-layout-br
+{
+   height: 0;
+}
+
+.club-article th, .club-article td
+{
+   padding: 2px;
+   border: solid 1px #C7C7C7;
+   vertical-align: top;
+   text-align: left;
+}
+
+.club-article th
+{
+   text-align: center;
+   vertical-align: middle;
+   padding: 7px;
+}
+
+.club-article th
+{
+   background: #F0F0F0;
+}
+
+pre
+{
+   overflow: auto;
+   padding: 0.1em;
+}
+
+.preview-cms-logo
+{
+   border: 0;
+   margin: 1em 1em 0 0;
+   float: left;
+}
+
+.image-caption-wrapper
+{
+   padding: 7px 7px 7px 7px;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+.image-caption-wrapper img
+{
+   margin: 0 !important;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+.image-caption-wrapper div.club-collage
+{
+   margin: 0 !important;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+.image-caption-wrapper p
+{
+   font-size: 80%;
+   text-align: right;
+   margin: 0;
+}
+
+.club-postheader
+{
+   color: #696969;
+   margin: 5px 10px;
+   font-size: 24px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+
+.club-postheader a,
+.club-postheader a:link,
+.club-postheader a:visited,
+.club-postheader a.visited,
+.club-postheader a:hover,
+.club-postheader a.hovered
+{
+   font-size: 24px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+
+.club-postheader a, .club-postheader a:link
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   text-align: left;
+   color: #3EBBFE;
+}
+
+.club-postheader a:visited, .club-postheader a.visited
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   text-align: left;
+   color: #8C8C8C;
+}
+
+.club-postheader a:hover,  .club-postheader a.hovered
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   text-align: left;
+   color: #39B9FE;
+}
+
+.club-postheadericons,
+.club-postheadericons a,
+.club-postheadericons a:link,
+.club-postheadericons a:visited,
+.club-postheadericons a:hover
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #696969;
+}
+
+.club-postheadericons
+{
+   padding: 1px;
+   margin: 0 0 0 10px;
+}
+
+.club-postheadericons a, .club-postheadericons a:link
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   color: #2AB4FE;
+}
+
+.club-postheadericons a:visited, .club-postheadericons a.visited
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   color: #757575;
+}
+
+.club-postheadericons a:hover, .club-postheadericons a.hover
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: underline;
+   color: #0198E9;
+}
+
+.club-postdateicon:before
+{
+   content:url('../images/postdateicon.png');
+   margin-right:6px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+   bottom: auto;
+}
+.opera .club-postdateicon:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.club-postauthoricon:before
+{
+   content:url('../images/postauthoricon.png');
+   margin-right:6px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+   bottom: auto;
+}
+.opera .club-postauthoricon:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.club-postediticon:before
+{
+   content:url('../images/postediticon.png');
+   margin-right:6px;
+   bottom: 2px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+}
+.opera .club-postediticon:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.club-postcontent ul>li:before,  .club-post ul>li:before,  .club-textblock ul>li:before
+{
+   content:url('../images/postbullets.png');
+   margin-right:10px;
+   bottom: 2px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+}
+.opera .club-postcontent ul>li:before, .opera   .club-post ul>li:before, .opera   .club-textblock ul>li:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.club-postcontent li, .club-post li, .club-textblock li
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #404040;
+   margin: 3px 0 0 11px;
+}
+
+.club-postcontent ul>li, .club-post ul>li, .club-textblock ul>li, .club-postcontent ol, .club-post ol, .club-textblock ol
+{
+   padding: 0;
+}
+
+.club-postcontent ul>li, .club-post ul>li, .club-textblock ul>li
+{
+   padding-left: 17px;
+}
+
+.club-postcontent ul>li:before,  .club-post ul>li:before,  .club-textblock ul>li:before
+{
+   margin-left: -17px;
+}
+
+.club-postcontent ol, .club-post ol, .club-textblock ol, .club-postcontent ul, .club-post ul, .club-textblock ul
+{
+   margin: 1em 0 1em 11px;
+}
+
+.club-postcontent li ol, .club-post li ol, .club-textblock li ol, .club-postcontent li ul, .club-post li ul, .club-textblock li ul
+{
+   margin: 0.5em 0 0.5em 11px;
+}
+
+.club-postcontent li, .club-post li, .club-textblock li
+{
+   margin: 3px 0 0 0;
+}
+
+.club-postcontent ol>li, .club-post ol>li, .club-textblock ol>li
+{
+   /* overrides overflow for "ul li" and sets the default value */
+  overflow: visible;
+}
+
+.club-postcontent ul>li, .club-post ul>li, .club-textblock ul>li
+{
+   /* makes "ul li" not to align behind the image if they are in the same line */
+  overflow-x: visible;
+   overflow-y: hidden;
+}
+
+blockquote
+{
+   background: #F2F2F2 url('../images/postquote.png') no-repeat scroll;
+   padding:10px 10px 10px 47px;
+   margin:10px 0 0 25px;
+   color: #121212;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: italic;
+   text-align: left;
+   /* makes block not to align behind the image if they are in the same line */
+  overflow: auto;
+   clear:both;
+}
+blockquote a, .club-postcontent blockquote a, .club-blockcontent blockquote a, .club-footer blockquote a,
+blockquote a:link, .club-postcontent blockquote a:link, .club-blockcontent blockquote a:link, .club-footer blockquote a:link,
+blockquote a:visited, .club-postcontent blockquote a:visited, .club-blockcontent blockquote a:visited, .club-footer blockquote a:visited,
+blockquote a:hover, .club-postcontent blockquote a:hover, .club-blockcontent blockquote a:hover, .club-footer blockquote a:hover
+{
+   color: #121212;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: italic;
+   text-align: left;
+}
+
+/* Override native 'p' margins*/
+blockquote p,
+.club-postcontent blockquote p,
+.club-blockcontent blockquote p,
+.club-footer blockquote p
+{
+   margin: 0;
+   margin: 5px 0;
+}
+
+.Sorter img
+{
+   border:0;
+   vertical-align:middle;
+   padding:0;
+   margin:0;
+   position:static;
+   z-index:1;
+   width: 12px;
+   height: 6px;
+}
+
+.Sorter a
+{
+   position:relative;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #757575;
+}
+
+.Sorter a:link
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #757575;
+}
+
+.Sorter a:visited, .Sorter a.visited
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #757575;
+}
+
+.Sorter a:hover, .Sorter a.hover
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #595959;
+}
+
+.Sorter
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color:#404040;
+}
+
+.club-footer
+{
+   background: #017EC1;
+   border-top:1px dotted #858585;
+   margin:20px auto 0;
+   position: relative;
+   color: #FFFFFF;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   line-height: 175%;
+   text-align: center;
+   padding: 0;
+}
+
+.club-footer a,
+.club-footer a:link,
+.club-footer a:visited,
+.club-footer a:hover,
+.club-footer td,
+.club-footer th,
+.club-footer caption
+{
+   color: #FFFFFF;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   line-height: 175%;
+}
+
+.club-footer p
+{
+   padding:0;
+   text-align: center;
+}
+
+.club-footer a,
+.club-footer a:link
+{
+   color: #E0E0E0;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+}
+
+.club-footer a:visited
+{
+   color: #D1D1D1;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+}
+
+.club-footer a:hover
+{
+   color: #C2E9FF;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: underline;
+}
+
+.club-footer h1
+{
+   color: #A6A6A6;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.club-footer h2
+{
+   color: #B5B5B5;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.club-footer h3
+{
+   color: #25B2FE;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.club-footer h4
+{
+   color: #858585;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.club-footer h5
+{
+   color: #858585;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.club-footer h6
+{
+   color: #858585;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.club-footer img
+{
+   border: none;
+   margin: 0;
+}
+
+.club-footer-inner
+{
+   margin: 0 auto;
+   width:80%;
+   padding:25px;
+   padding-right: 25px;
+   padding-left: 25px;
+}
+
+.club-rss-tag-icon
+{
+   background:  url('../images/footerrssicon.png') no-repeat scroll;
+   margin:0 auto;
+   min-height:32px;
+   min-width:32px;
+   display: inline-block;
+   text-indent: 35px;
+   background-position: left center;
+}
+
+.club-rss-tag-icon:empty
+{
+   vertical-align: middle;
+}
+
+.club-facebook-tag-icon
+{
+   background:  url('../images/footerfacebookicon.png') no-repeat scroll;
+   margin:0 auto;
+   min-height:32px;
+   min-width:32px;
+   display: inline-block;
+   text-indent: 35px;
+   background-position: left center;
+}
+
+.club-facebook-tag-icon:empty
+{
+   vertical-align: middle;
+}
+
+.club-twitter-tag-icon
+{
+   background:  url('../images/footertwittericon.png') no-repeat scroll;
+   margin:0 auto;
+   min-height:32px;
+   min-width:32px;
+   display: inline-block;
+   text-indent: 35px;
+   background-position: left center;
+}
+
+.club-twitter-tag-icon:empty
+{
+   vertical-align: middle;
+}
+
+.club-footer ul>li:before
+{
+   content:url('../images/footerbullets.png');
+   margin-right:6px;
+   bottom: 2px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+   margin-left: -13px;
+}
+.opera .club-footer ul>li:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.club-footer li
+{
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #CCEDFF;
+}
+
+.club-footer ul>li, .club-footer ol
+{
+   padding: 0;
+}
+
+.club-footer ul>li
+{
+   padding-left: 13px;
+}
+
+.club-page-footer,
+.club-page-footer a,
+.club-page-footer a:link,
+.club-page-footer a:visited,
+.club-page-footer a:hover
+{
+   font-family: Arial;
+   font-size: 10px;
+   letter-spacing: normal;
+   word-spacing: normal;
+   font-style: normal;
+   font-weight: normal;
+   text-decoration: underline;
+   color: #D4D4D4;
+}
+
+.club-page-footer
+{
+   position: relative;
+   z-index: auto !important;
+   padding: 1em;
+   text-align: center !important;
+   text-decoration: none;
+   color: #C4C4C4;
+}
+
+.club-lightbox-wrapper
+{
+   background: #333;
+   background: rgba(0, 0, 0, .8);
+   bottom: 0;
+   left: 0;
+   padding: 0 100px;
+   position: fixed;
+   right: 0;
+   text-align: center;
+   top: 0;
+   z-index: 1000000;
+}
+
+.club-lightbox,
+.club-lightbox-wrapper .club-lightbox-image
+{
+   cursor: pointer;
+}
+
+.club-lightbox-wrapper .club-lightbox-image
+{
+   border: 6px solid #fff;
+   border-radius: 3px;
+   display: none;
+   max-width: 100%;
+   vertical-align: middle;
+}
+
+.club-lightbox-wrapper .club-lightbox-image.active
+{
+   display: inline-block;
+}
+
+.club-lightbox-wrapper .lightbox-error
+{
+   background: #fff;
+   border: 1px solid #b4b4b4;
+   border-radius: 10px;
+   box-shadow: 0 2px 5px #333;
+   height: 80px;
+   opacity: .95;
+   padding: 20px;
+   position: fixed;
+   width: 300px;
+   z-index: 100;
+}
+
+.club-lightbox-wrapper .loading
+{
+   background: #fff url('../images/preloader-01.gif') center center no-repeat;
+   border: 1px solid #b4b4b4;
+   border-radius: 10px;
+   box-shadow: 0 2px 5px #333;
+   height: 32px;
+   opacity: .5;
+   padding: 10px;
+   position: fixed;
+   width: 32px;
+   z-index: 10100;
+}
+
+.club-lightbox-wrapper .arrow
+{
+   cursor: pointer;
+   height: 100px;
+   opacity: .5;
+   filter: alpha(opacity=50);
+   position: fixed;
+   width: 82px;
+   z-index: 10003;
+}
+
+.club-lightbox-wrapper .arrow.left
+{
+   left: 9px;
+}
+
+.club-lightbox-wrapper .arrow.right
+{
+   right: 9px;
+}
+
+.club-lightbox-wrapper .arrow:hover
+{
+   opacity: 1;
+   filter: alpha(opacity=100);
+}
+
+.club-lightbox-wrapper .arrow.disabled
+{
+   display: none;
+}
+
+.club-lightbox-wrapper .arrow-t,
+.club-lightbox-wrapper .arrow-b
+{
+   background-color: #fff;
+   border-radius: 3px;
+   height: 6px;
+   left: 26px;
+   position: relative;
+   width: 30px;
+}
+
+.club-lightbox-wrapper .arrow-t
+{
+   top: 38px;
+}
+
+.club-lightbox-wrapper .arrow-b
+{
+   top: 50px;
+}
+
+.club-lightbox-wrapper .close
+{
+   cursor: pointer;
+   height: 22px;
+   opacity: .5;
+   filter: alpha(opacity=50);
+   position: fixed;
+   right: 39px;
+   top: 30px;
+   width: 22px;
+   z-index: 10003;
+}
+
+.club-lightbox-wrapper .close:hover
+{
+   opacity: 1;
+   filter: alpha(opacity=100);
+}
+
+.club-lightbox-wrapper .close .cw,
+.club-lightbox-wrapper .close .ccw
+{
+   background-color: #fff;
+   border-radius: 3px;
+   height: 6px;
+   position: absolute;
+   left: -4px;
+   top: 8px;
+   width: 30px;
+}
+
+.club-lightbox-wrapper .cw
+{
+   transform: rotate(45deg);
+   -ms-transform: rotate(45deg);
+   /* IE 9 */
+    -webkit-transform: rotate(45deg);
+   /* Safari and Chrome */
+    -o-transform: rotate(45deg);
+   /* Opera */
+    -moz-transform: rotate(45deg);
+/* Firefox */}
+
+.club-lightbox-wrapper .ccw
+{
+   transform: rotate(-45deg);
+   -ms-transform: rotate(-45deg);
+   /* IE 9 */
+    -webkit-transform: rotate(-45deg);
+   /* Safari and Chrome */
+    -o-transform: rotate(-45deg);
+   /* Opera */
+    -moz-transform: rotate(-45deg);
+/* Firefox */}
+
+.club-lightbox-wrapper .close-alt,
+.club-lightbox-wrapper .arrow-right-alt,
+.club-lightbox-wrapper .arrow-left-alt
+{
+   color: #fff;
+   display: none;
+   font-size: 2.5em;
+   line-height: 100%;
+}
+
+.ie8 .club-lightbox-wrapper .close-alt,
+.ie8 .club-lightbox-wrapper .arrow-right-alt,
+.ie8 .club-lightbox-wrapper .arrow-left-alt
+{
+   display: block;
+}
+
+.ie8 .club-lightbox-wrapper .cw,
+.ie8 .club-lightbox-wrapper .ccw
+{
+   display: none;
+}
+
+.club-content-layout .club-sidebar1
+{
+   border-right:1px dotted #B5B5B5;
+   margin:0 auto;
+   width: 200px;
+}
+
+.club-content-layout .club-content
+{
+   margin:0 auto;
+}
+
+/* all the input except submit and checkbox */
+#wrapper input:not([type="checkbox"]){
+	width: 50%;
+	margin-top: 4px;
+	padding: 10px 5px 10px 32px;
+	border: 1px solid rgb(178, 178, 178);
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	  -moz-box-sizing : content-box;
+	       box-sizing : content-box;
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	        border-radius: 3px;
+	-webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+	   -moz-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+	        box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+	-webkit-transition: all 0.2s linear;
+	   -moz-transition: all 0.2s linear;
+	     -o-transition: all 0.2s linear;
+	        transition: all 0.2s linear;
+}
+#wrapper input:not([type="checkbox"]):active,
+#wrapper input:not([type="checkbox"]):focus{
+	border: 1px solid rgba(91, 90, 90, 0.7);
+	background: rgba(238, 236, 240, 0.2);
+	-webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+	   -moz-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+	        box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+}
+.bloc_prestation{
+    
+    
+}
+
+
+/*  MA SERIE DE STYLE CODE */
+
+
+    .lenav {
+	margin: 0px auto 0;
+        
+        margin-left: 250px;
+border-bottom-color: green;
+	position: relative;    
+	width: 70%;
+	height: 80px;
+	background-color: yellow;
+	border-radius: 8px;
+	font-size: 0;
+}
+.lenav a {
+	line-height: 50px;
+    
+	height: 100%;
+	font-size: 20px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+    margin-top: 0px;
+}
+.lenav .animation {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	transition: all .5s ease 0s;
+	border-radius: 8px;
+}
+.lenav a:nth-child(1) {
+	width: 150px;
+}
+.lenav a:nth-child(2) {
+	width: 300px;
+}
+.lenav a:nth-child(3) {
+	width: 320px;
+}
+.lenav a:nth-child(4) {
+	width: 300px;
+}
+.lenav a:nth-child(5) {
+	width: 300px;
+}
+.lenav  .start-home, a:nth-child(1):hover~.animation {
+	width: 150px;
+	left: 0;
+	background-color: #1abc9c;
+}
+.lenav  .start-about, a:nth-child(2):hover~.animation {
+	width: 320px;
+	left: 150px;
+	background-color: #e74c3c;
+}
+.lenav .start-blog, a:nth-child(3):hover~.animation {
+	width: 300px;
+	left: 470px;
+	background-color: #3498db;
+}
+.lenav .start-portefolio, a:nth-child(4):hover~.animation {
+	width: 300px;
+	left: 770px;
+	background-color: #9b59b6;
+}
+.lenav .start-contact, a:nth-child(5):hover~.animation {
+	width: 300px;
+	left: 1070px;
+	background-color: #e67e22;
+}
+
+body {
+	font-size: 12px;
+	font-family: sans-serif;
+	background: #2c3e50;
+}
+h1 {
+	text-align: center;
+	margin: 40px 0 40px;
+	text-align: center;
+	font-size: 30px;
+	color: #ecf0f1;
+	text-shadow: 2px 2px 4px #000000;
+	font-family: 'Cherry Swash', cursive;
+}
+
+.lenav p {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+  
+    text-align: center;
+    color: #ecf0f1;
+    font-family: 'Cherry Swash',cursive;
+    font-size: 16px;
+}
+
+.lenav span {
+    color: #2BD6B4;
+}
+
+.fixed {
+position:fixed;
+top:0;
+left:0;
+}
+
+.conteneurnav{
+    background-color: black;
+    margin-left: 0px;
+    height: 90px;
+    width: 100%;
+    
+}
+
+.club-headline{
+   height: 200px; 
+    
+    
+    
+    
+}
+
+#cont{
+   position: fixed; 
+}
+.club-headline
+{
+    height: 10%;
+}
+   
+
+/* Begin Additional CSS Styles */
+
+/* End Additional CSS Styles */

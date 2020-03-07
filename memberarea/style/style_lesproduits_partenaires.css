@@ -1,0 +1,250 @@
+#mycatArchive { 
+      margin-left:300px;   /* normalement c'est 20px; */
+    float:left;  
+    width:1550px;
+    height:600px;
+    background-color:white; 
+    overflow-y: hidden;
+      
+}  
+.mycatArchiveBloc { 
+   
+    margin-left:0px;   /* normalement c'est 20px; */
+    margin-top:0px;   /* normalement c'est 20px; */
+    float:left;  
+     
+    height:250px;  
+   
+    
+     border: 1px solid #DFE2E2;
+       width: 550px; 
+        float: left;
+        
+   
+      
+}  
+ 
+
+    
+.mycatArchiveBloc:hover .panel_addpanier{
+	opacity:1;
+      
+}
+    
+.mycatArchiveBloc:hover img{
+	opacity:0.5;
+      
+}
+    
+
+    .mycatArchiveBloc:hover{
+         border: 1px solid #C8C8C8;
+        background-color: azure;
+    }   
+ 
+
+.panel_addpanier {
+    font-size:1.24em;
+     
+    border: 2px solid #C8C8C8;
+     border-bottom: 2px solid #C8C8C8;
+      border-right: 2px solid #C8C8C8;
+    
+  
+ 
+    opacity:0;
+   	position:relative;
+    bottom: 0px;
+   
+	
+ 
+    color: green;
+	 -webkit-transition: all 0.2s ease; 
+        -moz-transition: all 0.2s ease;
+         -ms-transition: all 0.2s ease;
+          -o-transition: all 0.2s ease;
+             transition: all 0.2s ease;
+}
+    
+    
+    .add_panier{
+        position: absolute;
+        margin-left: 50;
+         margin-top: 50; 
+        font-size:17.143em
+        text-align: center;
+   width: 195px;
+   height: 60px;
+       
+        bottom: 0px;
+        margin-top: 50;
+        	position:relative;
+            border-style: solid;
+         
+          background-color:#6DC4B9;
+        color: white;
+        
+border:1px solid #9FC6FF;
+padding:5px;
+/*arrondir les coins en haut à gauche et en bas à droite*/
+-moz-border-radius:10px 0;
+-webkit-border-radius:10px 0;
+border-radius:20px;
+    border-color: #6DC4B9;
+        
+    }
+    
+    .panel_addpanier: hover   input{
+         background-color:#6DC4B9;
+        color: white;
+        
+    }
+
+
+
+
+
+
+#global {
+   overflow:auto;
+}
+#gauche {
+   overflow:hidden;
+   width:30%;
+    
+}
+#droit {
+   overflow:hidden;
+    margin-left: 50px;
+}
+    
+    
+    
+    
+#bloc_prestation {
+  border-style:  2px solid #C7C7C7;
+     border-bottom: 2px solid #C7C7C7;
+  border-right: 3px solid #C7C7C7;
+     border-left: 1px solid #C7C7C7;
+     border-top: 3px solid #C7C7C7;
+  padding: 10px;
+  float: left;
+  width: 350px;
+  margin-left: 2px;
+  background-color: white;
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-image: url(images/terrekpZ1goldrorange60.png);
+    list-style-type: none;
+   
+}
+#bloc_prestation li {
+  list-style-type: none;
+    color:#1D1E20;
+    list-style-type: none;
+   
+      
+}
+#bloc_prestation a {
+  color: #1D1E20;
+  text-decoration: none;
+    font-size: 2em;
+    list-style-type: none;
+}
+#bloc_prestation a:hover {
+  color: blue;
+}
+#bloc_prestation li a:hover {
+  border-left: 5px solid azure;
+  background-color: white;
+  padding-left: 5px;
+    list-style-type: none;
+}
+
+
+
+
+
+ 
+
+.content_part {
+  float: left;
+  width: 250px;
+      
+    height: 200px;
+    
+}
+
+.content_part img{
+  
+  width: 250px;
+     
+    height: 200px;
+    
+}
+
+    
+   
+    
+    
+.menu_part {
+   margin-top: 15px;
+  margin-left: 270px;
+  
+  width: 250px;
+    height: 250%;
+    
+    text-align: justify;
+    
+}
+
+.menu_part a{
+    text-decoration-line: none;
+}
+    
+
+
+.prenom_partenaire{
+    font-size: 2.5em;
+    color: blue;
+}
+
+.thb-img{
+    width: 
+    
+}
+
+
+.description_partenaire{
+    font-size: 1.5em;
+    margin-top: 30;
+}
+
+.panel_addpanier{
+    margin-bottom: 12;
+    margin-left: 45;
+    font-size: 1.8em;
+    float: right;
+    width: 150px;
+    height: 30px;
+    background-color: azure;
+    border-color: #0082F5;
+    border-radius: 5px;
+   
+}
+
+.panel_addpanier: hover{
+    margin-bottom: 12;
+    margin-left: 46;
+    font-size: 1.7em;
+    float: right;
+    width: 170px;
+    height: 30px;
+    background-color: #0082F5;
+   color: white;
+   
+}
+.ville_partenaire{
+    font-size: 1.5em;
+}
+

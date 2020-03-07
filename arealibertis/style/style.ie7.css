@@ -1,0 +1,160 @@
+/* 
+
+Created by STA BENIN / STA GROUPE
+
+--------- Développeur Web -----------
+LIGAN O. F. Patrick ( +229 67 44 62 18)
+
+ */
+
+.STA-header, #STA-header-bg, .STA-layout-cell, .STA-layout-wrapper, .STA-footer, .STA-nav, #STA-hmenu-bg, .STA-sheet,
+.clearfix {
+   zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).className="cleared");
+}
+
+.STA-textblock > div {
+   display: block;
+   line-height: normal;
+   zoom: 1;
+}
+
+.STA-header
+{
+   z-index: 1;
+   background-image: [headerimage];
+   background-position: [headerposition];
+}
+
+#STA-header-bg 
+{
+   display: none;
+}
+
+.STA-hmenu>li, .STA-hmenu>li>a
+{
+   display: inline !important;
+   zoom: 1;
+   float: none !important;
+   vertical-align: top;
+}
+ul.STA-hmenu, ul.STA-hmenu ul {
+   zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).className="cleared");
+}
+#STA-hmenu-bg 
+{
+   display: none;
+}
+
+ul.STA-hmenu>li:first-child {
+   padding-right:11px;
+}
+ul.STA-hmenu>li{
+   zoom:expression(runtimeStyle.zoom=1,insertBefore(document.createElement('span'),firstChild).className='STA-hmenu-separator');
+}
+ul.STA-hmenu>li>span.STA-hmenu-separator
+{
+   position:absolute;
+   display: block;
+   top:0;
+   left:  -11px;
+   width: 11px;
+   height: 52px;
+   background: url('../images/menuseparator.png') center center no-repeat;
+}
+ul.STA-hmenu>li:first-child>span.STA-hmenu-separator
+{
+   display:none;
+}
+
+ul.STA-hmenu ul, .desktop-nav ul.STA-hmenu>li.ext:hover>a{
+   background-color: #EFF2F5 !important;
+}
+
+.STA-content-layout, .STA-content-layout-row, .STA-layout-cell 
+{
+   display: block;
+   zoom: 1;
+}
+.STA-layout-cell
+{
+   position:relative;
+   float: left;
+   clear: right;
+}
+
+ul.STA-vmenu, ul.STA-vmenu ul, ul.STA-vmenu li{
+   zoom: 1;
+}
+
+ul.STA-vmenu ul 
+{
+}
+
+input[type="text"]
+{
+   margin:0 0 0 -3px;
+   zoom:expression(runtimeStyle.zoom = 1, parentNode.insertBefore(document.createElement('div'), this).appendChild(this));
+}
+
+* html input[type="text"]
+{
+   margin :0;
+}
+
+form.STA-search>input[type="text"]
+{
+   margin:0 0 0 -3px;
+   zoom:expression(runtimeStyle.zoom = 1, parentNode.insertBefore(document.createElement('div'), this).appendChild(this));
+}
+
+form.STA-search div>input[type="text"]
+{
+   width: 100%;
+}
+
+* html form.STA-search>input[type="text"] 
+{
+   margin :0;
+}
+
+.STA-postheadericons span{
+   zoom: 1;
+}
+.STA-postcontent {
+   height: 1%;
+}
+
+.close-alt, .arrow-right-alt, .arrow-left-alt {
+   display: block !important;
+}
+.cw, .ccw {
+   display: none !important;
+}
+
+.STA-sidebar1
+{
+   background: none !important;
+   border: none !important;
+   zoom:expression(runtimeStyle.zoom=1, parentNode.parentNode.insertBefore(document.createElement('div'),parentNode.parentNode.firstChild).className='STA-sidebar1-bg' + (className.indexOf('STA-sidebar1-fix') == -1 ? '' : ' STA-sidebar1-bg-fix' ));
+}
+
+.STA-sidebar1-bg 
+{
+   border-right:1px dotted #A3B4C8;
+   position:absolute;
+   z-index:-2;
+   direction: ltr;
+   left:  0;
+   bottom:0;
+   top:0;
+   width: 200px;
+   overflow:hidden;
+   display:block;
+}
+
+.STA-content 
+{
+   width: auto;
+   float:none;
+}
+

@@ -1,0 +1,74 @@
+.finders-container {
+	border: unset;
+}
+.finder-block {
+	border-color: #f1f1f1;
+	border-radius: 4px;
+	/*cursor: initial;*/
+}
+.finder-block header .level-first {
+	padding-top: 10px;
+}
+.finder-block p {
+	color: #5a5a5a;
+}
+.finder-block .hgroup span {
+	font-weight: bold;
+}
+.finder-block .hgroup i {
+	color: #318CE7;
+}
+
+.finder-block .btn-allcat {
+	margin-top: 40px;
+}
+.finder-container .jober-profile-page .table > tbody > tr > td.title {
+	width: 50%;
+}
+.finder-container .jober-profile-page .table > tbody > tr > td.title i {
+	color: #999;
+	padding-right: 10px;
+}
+.finder-container .table-next {
+	border-left: 1px solid #eee;
+}
+.finder-container .job-title {
+	border-bottom:1px solid #eee;
+	padding-bottom:15px;
+	/*background-color: #318ce7;*/
+}
+.finder-container .job-title h1 {
+	font-weight: bold;
+}
+.finder-container .job-title h1 span {
+	font-weight: 200;
+}
+.c-content-panel .item-cat {
+	position: absolute;
+	right: 5%;
+	bottom: 2%;
+	color: rgba(150, 162, 178, 0.7);
+}
+.c-content-panel .finder-block header {
+	position: relative;
+}
+
+.finder-container .job-profil-description p, .finder-container .jober-profile-page .table > tbody > tr > td.value {
+	color: #444;
+}
+.finder-block header .location {
+	position: absolute;
+	top: 20px;
+    right: 5%;
+}
+.finder-block .offer-desc {
+	padding-top: 10px;
+	margin-bottom: 0;
+}
+.home_finders .finder-block {
+	min-height: 215px;
+	max-height: 215px;
+}
+.home_finders .item-block header {
+    border-bottom-color: transparent;
+}

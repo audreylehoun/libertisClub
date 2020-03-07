@@ -1,0 +1,101 @@
+
+.demo-btn-margin .btn{margin-bottom:6px}
+.navbar .logo-alt img,.navbar .logo img{height: auto !important;}
+#msgheader{
+	font-weight:bold;
+	font-size: 1.6em;
+}
+
+.nav-account > li {
+    position: relative;
+    display: inline-block;
+    padding: 0 2px;
+}
+
+.nav-account a{
+    color: #000;
+    font-weight: 500;
+    transition: opacity .3s ease-in-out;
+
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 0 12px;
+    line-height: 200%;
+    transition: color .2s linear;
+}
+
+.nav-account a:hover{
+    color: #fff;
+}
+
+.nav-account a.facebook, .nav-account a.twitter{
+    color: #fff;
+}
+
+.nav-account a.facebook:hover{
+    color: #4267b2;
+}
+
+.nav-account a.twitter:hover{
+    color: #1da1f2;
+}
+
+.backboutton{
+	background: #d39e0a;
+	color: #000;
+}
+
+.section-header h2.section-title::after{
+    position: absolute;
+    left: 2%;
+    bottom: -26px;
+    width: 48px;
+    height: 2px;
+    background-color: #318CE7;
+    content: "";
+}
+
+.section-header h2.section-title{
+   text-align: left;
+   font-weight: bold;
+   font-family:'Open Sans',sans-serif;
+}
+
+.leformulaire{margin-top: 7%;}
+
+
+
+
+@media (max-width: 767px) {
+.pull-right{margin-top: 7% !important;} .pull-left{margin-top: 5% !important; text-align: center !important;} .section-header h2.section-title {text-align: center !important;} .section-header h2.section-title::after {left: 50%;} .tino_create{text-align: center;  margin-bottom: 8% !important;} #msgheader{margin-bottom: 10%; margin-top: 30%; font-size: 1.2em;} .nombre, .nombrelabel, .copyright-text{text-align: center !important;} .nombre {margin-bottom: 0px !important;}.nombrelabel{margin-bottom: 10% !important;} .copyright-text{margin-bottom: 7% !important;} .social-icons {text-align: center !important;}
+.pull-left, .pull-right{text-align: center;} .pull-right .row .col-xs-12{ margin-bottom:1% !important;} 
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+.pull-right{margin-top: 7% !important;} .pull-left{margin-top: 5% !important;} .section-header h2.section-title {text-align: center !important;} .section-header h2.section-title::after {left: 50%;} .tino_create{text-align: center;  margin-bottom: 8% !important;} #msgheader{margin-bottom: 5%; margin-top: 8%;} .nombre, .nombrelabel, .copyright-text{text-align: center !important;} .nombre {margin-bottom: 0px !important;}.nombrelabel{margin-bottom: 10% !important;} .copyright-text{margin-bottom: 7% !important;} .social-icons {text-align: center !important;} .pull-left, .pull-right{text-align: center;} .pull-right .row .col-sm-2, .pull-right .row .col-sm-1{ float: none !important;} .pull-right .row ul{ padding-bottom: 10%;}
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199) { 
+.pull-right{margin-top: 7% !important;} .pull-left{margin-top: 5% !important;} .section-header h2.section-title {text-align: center !important;} .section-header h2.section-title::after {left: 50%;} .tino_create{text-align: center;  margin-bottom: 8% !important;} #msgheader{margin-bottom: 5%; margin-top: 5%;} .nombre, .nombrelabel, .copyright-text{text-align: center !important;} .nombre {margin-bottom: 0px !important;}.nombrelabel{margin-bottom: 10% !important;} .copyright-text{margin-bottom: 7% !important;} .social-icons {text-align: center !important;}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { ... }
+
+
+
+.call-seminaire{
+    padding: 6px 25px 4px 25px;
+    text-transform: none;
+    background-color: #318ce7;
+    font-size: 14px;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    margin-right: 5px;
+    margin-top: 3%;
+}

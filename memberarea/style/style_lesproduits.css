@@ -1,0 +1,460 @@
+#mycatArchive { 
+      margin-left:300px;   /* normalement c'est 20px; */
+    float:left;  
+    width:1400px;
+    height:600px;
+    background-color:white; 
+    
+      
+}  
+.mycatArchiveBloc {  
+    margin-left:0px;   /* normalement c'est 20px; */
+    margin-top:10px;   /* normalement c'est 20px; */
+    float:left;  
+    width:250px;  
+    height:440px;  
+    background-color:white;  
+    text-align:center;
+   
+      
+}  
+  .price{font-weight:500;
+    letter-spacing:-.01em;
+     color:red;
+    font-size:2.143em
+          margin-left:20px;   /* normalement c'est 20px; */
+    margin-top:10px;   /* normalement c'est 20px; */
+}
+
+.price del{
+    font-weight:400;
+    color:red;
+    font-size:.875em
+}
+
+.price ins{
+    font-weight:500
+}
+
+.price ins+del{
+    margin-left:.214em
+
+}
+
+.price .amount {
+    line-height: 1em;
+}
+
+    .woocommerce-Price-amount amount{
+           left: 50px;
+        border-bottom: 1px solid #bbb;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    }
+
+.imageprod {
+    margin-left: 15px;
+    
+}
+
+.pic{
+    margin-left: 0px;
+    
+}
+    
+    .produit_prix{
+        color : #6DC4B4;
+        text-align: center;
+        margin-left: 30px;
+         font-size:1.5em
+    }
+    
+       .produit_nom{
+        color : #6C6060;
+        text-align:center;
+         font-size:1.5em;
+           
+           text-decoration-line: none;
+    }
+    
+ a:link
+{
+text-decoration:none;
+}
+    
+    
+    
+    .woocommerce-variation-add-to-cart{
+        display:flex;
+        align-items:flex-end
+    }
+    
+    
+    
+    .cube {
+    margin: 52px;
+	position:relative;
+    width: 200px;
+    height: 200px;
+   
+}
+
+     .cube-cadre {
+    margin: 52px;
+	position:relative;
+    width: 198px;
+    height: 170px;
+         margin-left: 1px;
+         margin-top: 1px; 
+    border: none;
+}
+
+.lienprod{
+    margin-top: 20; 
+    text-align: center; 
+    left: 10;
+}
+
+    
+    
+    
+.mycatArchiveBloc:hover .panel_addpanier{
+	opacity:1;
+      
+}
+    
+    .mycatArchiveBloc:hover{
+         border: 1px solid #C8C8C8;
+    }   
+    
+.panel_addpanier {
+    font-size:3.143em;
+     
+    border: 2px solid #C8C8C8;
+     border-bottom: 2px solid #C8C8C8;
+      border-right: 2px solid #C8C8C8;
+    
+  
+ width: 200;
+     height: 350;
+    opacity:0;
+   	position:relative;
+    bottom: 0px;
+    margin-top: 10px;
+	height: 160px;
+   background: white;
+    border-style: 5px solid blue;
+  
+    color: white;
+	 -webkit-transition: all 0.2s ease; 
+        -moz-transition: all 0.2s ease;
+         -ms-transition: all 0.2s ease;
+          -o-transition: all 0.2s ease;
+             transition: all 0.2s ease;
+}
+    
+    
+    .add_panier{
+        position: absolute;
+        margin-left: 50;
+         margin-top: 50; 
+        font-size:17.143em
+        text-align: center;
+   width: 195px;
+   height: 60px;
+       
+        bottom: 0px;
+        margin-top: 50;
+        	position:relative;
+            border-style: solid;
+         
+          background-color:#6DC4B9;
+        color: white;
+        
+border:1px solid #9FC6FF;
+padding:5px;
+/*arrondir les coins en haut à gauche et en bas à droite*/
+-moz-border-radius:10px 0;
+-webkit-border-radius:10px 0;
+border-radius:20px;
+    border-color: #6DC4B9;
+        
+    }
+    
+    .panel_addpanier: hover   input{
+         background-color:#6DC4B9;
+        color: white;
+        
+    }
+
+
+
+#bloc_gauche{
+     border-style:  2px solid #C7C7C7;
+     border-bottom: 2px solid #C7C7C7;
+  border-right: 3px solid #C7C7C7;
+     border-left: 1px solid #C7C7C7;
+     border-top: 3px solid #C7C7C7;
+  padding: 10px;
+  float: left;
+  width: 600px;
+    height: 550;
+  margin-left: 2px;
+  background-color: white;
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-image: url(images/terrekpZ1goldrorange60.png);
+    list-style-type: none;
+    
+}
+
+#section_gauche a{
+    float: left;
+    position: relative;
+    border-style: 2px solid white;
+     background-color: blue;
+     border-left: 1px solid #C7C7C7;
+    height: 350;
+    padding: 10px;
+    
+}
+
+
+#conteneur {
+    overflow: auto;
+      border: 1px solid black;
+    margin:15px;
+     min-height: 400;
+    
+    
+    
+     font-size:3.143em
+     border-style: none;
+ width: 190;
+     height: 150;
+    opacity:0;
+   	position:relative;
+    bottom: 0px;
+    
+	height: 60px;
+   
+    }
+    
+.form_panier{
+    text-align: center;
+    position: absolute;
+    float: right;
+    
+}
+
+
+div#container{
+     overflow: auto;
+    background:#ff0;
+    width:100px;
+    padding:5px;
+     height: 50%;
+} 
+
+div#a{
+     overflow: auto;
+    background:#f00;
+    float:left;
+    width:150px;
+    height: 70%;
+} 
+
+div#b{
+    background:#0f0;
+    margin-left:160px;
+     min-height: 400;
+
+}
+
+section{
+    display: flex; 
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 20px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 10px #bbb;
+    background-color: #fff;
+}
+
+/*SECTIONS*/
+section{
+    display: flex; 
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 20px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 10px #bbb;
+    background-color: #fff;
+}
+
+section h2{
+    margin: 20px 0;
+    width: 90%;
+}
+section > div{
+    width: 90%;
+}
+
+ 
+
+
+
+
+
+/*SECTION INFOS*/
+.photo{
+    
+    text-align: center;
+}
+.photo img{
+    width: 150px;
+    height: 150px;
+    border: 3px solid #fff;
+    box-shadow: 0px 0px 10px #777;
+    border-radius: 50%;
+    margin-top: -80px;
+}
+.prez{
+    border-bottom: 2px dashed #ccc;
+}
+.prez a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto 30px auto;
+    color: #fff;
+    background-color: #EA0;
+    box-shadow: 0px 0px 10px #ccc;
+    border-radius: 5px;
+}
+.contact-flex{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.contact-flex p:first-child{
+    flex: 0 0 40%;
+}
+.contact-flex p:last-child{
+    flex: 0 0 60%;
+}
+.social{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px auto 0px auto;
+}
+.social img{
+    width: 40px;
+    height: 40px;
+}
+
+*VERSION BUREAU DU CV*/
+@media screen and (min-width: 980px){
+    section{
+        width: 80%;
+        box-shadow: 0px 0px 10px #bbb;
+    }
+    a:hover{
+        color: #EA0;
+    }
+    header h1{
+        width: 80%;
+    }
+    .prez, .contact{
+        flex: 0 0 45%;
+    }
+    .prez{
+        border-bottom: none;
+        border-right: 2px solid #ccc;
+        padding-right: 20px;
+        margin-left: auto;
+    }
+    .contact{
+        padding-left: 20px;
+        margin-right: auto;
+    }
+    .prez a{
+        border: 2px solid transparent;
+    }
+    .prez a:hover{
+        color: #f28835;
+        background-color: #fff;
+        border: 2px solid #f28835;
+        box-shadow: 0px 0px 20px #666;
+    }
+    .exp-logo{
+        flex: 0 0 10%;
+    }
+    .exp-info, .exp-desc{
+        flex: 0 0 85%;
+        margin-left: auto;
+    }
+    .interet{
+        flex: 0 1 25%;
+    }
+}
+
+#global {
+   overflow:auto;
+}
+#gauche {
+   float:left;
+   width:30%;
+     
+}
+#droit {
+   overflow:auto;
+    margin-left: 50px;
+}
+    
+    
+    
+    
+#bloc_prestation {
+  border-style:  2px solid #C7C7C7;
+     border-bottom: 2px solid #C7C7C7;
+  border-right: 3px solid #C7C7C7;
+     border-left: 1px solid #C7C7C7;
+     border-top: 3px solid #C7C7C7;
+  padding: 10px;
+  float: left;
+  width: 350px;
+  margin-left: 2px;
+  background-color: white;
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-image: url(images/terrekpZ1goldrorange60.png);
+    list-style-type: none;
+   
+}
+#bloc_prestation li {
+  list-style-type: none;
+    color:#1D1E20;
+    list-style-type: none;
+   
+      
+}
+#bloc_prestation a {
+  color: #1D1E20;
+  text-decoration: none;
+    font-size: 2em;
+    list-style-type: none;
+}
+#bloc_prestation a:hover {
+  color: blue;
+}
+#bloc_prestation li a:hover {
+  border-left: 5px solid blue;
+  background-color: white;
+  padding-left: 5px;
+    list-style-type: none;
+}
+
+

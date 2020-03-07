@@ -1,0 +1,282 @@
+#mycatArchive { 
+      margin-left:300px;   /* normalement c'est 20px; */
+    float:left;  
+    width:1550px;
+    height:600px;
+    background-color:red; 
+    overflow-y: hidden;
+      
+}  
+.mycatArchiveBloc { 
+   
+    margin-left:0px;   /* normalement c'est 20px; */
+    margin-top:0px;   /* normalement c'est 20px; */
+    float:left;  
+     
+    height:250px;  
+   
+    
+     border: 1px solid #DFE2E2;
+       width: 550px; 
+        float: left;
+        
+   
+      
+}  
+
+
+   
+    
+.mycatArchiveBloc:hover .panel_addpanier{
+	opacity:1;
+      
+}
+    
+    .mycatArchiveBloc:hover{
+         border: 1px solid #C8C8C8;
+    }   
+    
+
+.panel_addpanier {
+    font-size:1.24em;
+     
+    border: 2px solid #C8C8C8;
+     border-bottom: 2px solid #C8C8C8;
+      border-right: 2px solid #C8C8C8;
+    
+  
+ 
+    opacity:0;
+   	position:relative;
+    bottom: 0px;
+   
+	
+ 
+    color: green;
+	 -webkit-transition: all 0.2s ease; 
+        -moz-transition: all 0.2s ease;
+         -ms-transition: all 0.2s ease;
+          -o-transition: all 0.2s ease;
+             transition: all 0.2s ease;
+}
+    
+    
+    .add_panier{
+        position: absolute;
+        margin-left: 50;
+         margin-top: 50; 
+        font-size:17.143em
+        text-align: center;
+   width: 195px;
+   height: 60px;
+       
+        bottom: 0px;
+        margin-top: 50;
+        	position:relative;
+            border-style: solid;
+         
+          background-color:#6DC4B9;
+        color: white;
+        
+border:1px solid #9FC6FF;
+padding:5px;
+/*arrondir les coins en haut à gauche et en bas à droite*/
+-moz-border-radius:10px 0;
+-webkit-border-radius:10px 0;
+border-radius:20px;
+    border-color: #6DC4B9;
+        
+    }
+    
+
+    .panel_addpanier: hover   input{
+         background-color:#6DC4B9;
+        color: white;
+        
+    }
+
+
+
+#bloc_gauche{
+     border-style:  2px solid #C7C7C7;
+     border-bottom: 2px solid #C7C7C7;
+  border-right: 3px solid #C7C7C7;
+     border-left: 1px solid #C7C7C7;
+     border-top: 3px solid #C7C7C7;
+  padding: 10px;
+  float: left;
+  width: 600px;
+    height: 550;
+  margin-left: 2px;
+  background-color: white;
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-image: url(images/terrekpZ1goldrorange60.png);
+    list-style-type: none;
+    
+}
+
+#section_gauche a{
+    float: left;
+    position: relative;
+    border-style: 2px solid red;
+     background-color: blue;
+     border-left: 1px solid #C7C7C7;
+    height: 350;
+    padding: 10px;
+    
+}
+
+
+#conteneur {
+    overflow: auto;
+      border: 1px solid black;
+    margin:15px;
+     min-height: 400;
+    
+    
+    
+     font-size:3.143em
+     border-style: none;
+ width: 190;
+     height: 150;
+    opacity:0;
+   	position:relative;
+    bottom: 0px;
+    
+	height: 60px;
+   
+    }
+    
+
+.form_panier{
+    text-align: center;
+    position: absolute;
+    float: right;
+    
+}
+
+
+div#container{
+     overflow: auto;
+    background:#ff0;
+    width:100px;
+    padding:5px;
+     height: 50%;
+} 
+
+div#a{
+     overflow: auto;
+    background:#f00;
+    float:left;
+    width:150px;
+    height: 70%;
+} 
+
+div#b{
+    background:#0f0;
+    margin-left:160px;
+     min-height: 400;
+
+}
+
+
+
+
+    
+    
+
+
+
+
+
+@media screen and (min-width: 980px){
+    section{
+        width: 150;
+        box-shadow: 0px 0px 10px #bbb;
+        height: 200%;
+        
+       
+    }
+    
+    .exp-logo{
+        flex: 0 0 40%;
+    }
+    .exp-info, .exp-desc{
+        flex: 0 0 85%;
+        margin-left: auto;
+        
+    }
+        
+    
+    .exp-desc  {
+         border:  2px solid red;
+        border-radius: 15;
+        max-width: 180;
+        border-radius: 20px;
+-moz-border-radius: 20px;
+-webkit-border-radius: 20px;
+-o-border-radius: 20px;
+-ms-border-radius: 20px;
+        
+    }
+    
+    
+    
+    
+    .interet{
+        flex: 0 1 25%;
+    }
+}
+
+Resources1×0.5×0.25×Rerun
+
+
+
+ 
+
+.content_part {
+  float: left;
+  width: 100px;
+       border:  2px solid red;
+}
+
+
+    
+   
+    
+    
+.menu_part {
+   
+  margin-left: 270px;
+  
+  width: 250px;
+    height: 250%;
+    
+    text-align: justify;
+    
+}
+
+.thb-img:hover {
+    border:  2px solid red;
+     box-shadow: 0px 0px 10px #bbb;
+    opacity: 0.5;
+    
+}
+
+.nom_partenaire{
+    font-size: 2em;
+}
+
+
+
+.description_partenaire{
+    font-size: 1.5em;
+}
+
+.btn_reserver_partenaire{
+    margin-bottom: 12;
+    margin-left: 45;
+   
+}
+
